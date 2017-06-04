@@ -49,7 +49,7 @@ open class FNVideoView: UIView {
 
 // MARK: public method
 
-extension FNVideoView {
+public extension FNVideoView {
     
     /**
      - parameter videoURL:
