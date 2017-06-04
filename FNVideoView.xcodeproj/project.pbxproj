@@ -10,6 +10,7 @@
 		317C56901EE3A415008926B7 /* FNVideoView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317C56861EE3A415008926B7 /* FNVideoView.framework */; };
 		317C56951EE3A415008926B7 /* FNVideoViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C56941EE3A415008926B7 /* FNVideoViewTests.swift */; };
 		317C56971EE3A415008926B7 /* FNVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 317C56891EE3A415008926B7 /* FNVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		317C56DF1EE3B6A9008926B7 /* FNVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C56DE1EE3B6A9008926B7 /* FNVideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		317C568F1EE3A415008926B7 /* FNVideoViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FNVideoViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		317C56941EE3A415008926B7 /* FNVideoViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNVideoViewTests.swift; sourceTree = "<group>"; };
 		317C56961EE3A415008926B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317C56DE1EE3B6A9008926B7 /* FNVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNVideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		317C56881EE3A415008926B7 /* FNVideoView */ = {
 			isa = PBXGroup;
 			children = (
+				317C56DE1EE3B6A9008926B7 /* FNVideoView.swift */,
 				317C56891EE3A415008926B7 /* FNVideoView.h */,
 				317C568A1EE3A415008926B7 /* Info.plist */,
 			);
@@ -149,6 +152,7 @@
 					317C56851EE3A415008926B7 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = E5RDJ83DDA;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					317C568E1EE3A415008926B7 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317C56DF1EE3B6A9008926B7 /* FNVideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		317C569B1EE3A415008926B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E5RDJ83DDA;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.FNVideoView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +350,7 @@
 		317C569C1EE3A415008926B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = E5RDJ83DDA;
@@ -362,6 +370,7 @@
 		317C569E1EE3A415008926B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = E5RDJ83DDA;
 				INFOPLIST_FILE = FNVideoViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		317C569F1EE3A415008926B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = E5RDJ83DDA;
 				INFOPLIST_FILE = FNVideoViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
