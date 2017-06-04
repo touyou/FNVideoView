@@ -16,8 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let url = URL(fileURLWithPath: Bundle.main.path(forResource: "movie", ofType: "mp4")!)
-        self.videoView.setPlayer(videoURL: url)
-        videoView.play()
+        let videoView = FNVideoView(frame: self.view.frame, videoURL: url)
+        self.view.addSubview(videoView)
+        videoView.loopPlay()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
