@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FNVideoView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "Play the video on the background of the view"
 
   # This description is used to generate tags and improve search results.

@@ -13,6 +13,9 @@ Play the video on the background of the view
 
 
 2. Write Code
+```Swift
+import FNVideoView
+```
    #### when using storyboard
    ```Swift
     @IBOutlet fileprivate var videoView: FNVideoView!
