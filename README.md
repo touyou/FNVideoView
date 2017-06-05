@@ -1,4 +1,5 @@
 # FNVideoView
+Play the video on the background of the view
 
 ## Features
 Play the video on the background of the view
