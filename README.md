@@ -4,13 +4,13 @@ Play the video on the background of the view
 ## Features
 Play the video on the background of the view
 
-![GIF](https://github.com/funzin/FNVideoView/blob/develop/Screenshot/demo.gif)
+![GIF](https://github.com/funzin/FNVideoView/blob/master/Screenshot/demo.gif)
 
 ## How to use
 1. Add Video
 [Build Phase]→[Copy Bundle Resources]→Tapped Plus Button
 
-![AddVideo](https://github.com/funzin/FNVideoView/blob/develop/Screenshot/AddVideo.png)
+![AddVideo](https://github.com/funzin/FNVideoView/blob/master/Screenshot/AddVideo.png)
 
 
 2. Write Code
