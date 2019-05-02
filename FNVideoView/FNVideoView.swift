@@ -29,7 +29,7 @@ open class FNVideoView: UIView {
      - parameter videoURL:
      - parameter fillMode:AVLayerVideoGravityResizeAspect, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResize
      */
-    public init(frame: CGRect, videoURL: URL, fillMode: String = AVLayerVideoGravityResizeAspectFill) {
+    public init(frame: CGRect, videoURL: URL, fillMode: AVLayerVideoGravity = AVLayerVideoGravity.resizeAspectFill) {
         super.init(frame: frame)
         
         self.frame = frame
@@ -55,9 +55,9 @@ public extension FNVideoView {
      - parameter videoURL:
      - parameter fillMode:AVLayerVideoGravityResizeAspect, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResize
      */
-    func setPlayer(videoURL: URL, fillMode: String = AVLayerVideoGravityResizeAspectFill) {
+    func setPlayer(videoURL: URL, fillMode: AVLayerVideoGravity = AVLayerVideoGravity.resizeAspectFill) {
         self.player = AVPlayer(url: videoURL)
-        self.player?.actionAtItemEnd = AVPlayerActionAtItemEnd.none
+        self.player?.actionAtItemEnd = AVPlayer.ActionAtItemEnd.none
         self.setFillMode(mode: fillMode)
     }
     
@@ -72,7 +72,7 @@ public extension FNVideoView {
     func loopPlay() {
         self.play()
         NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
-            self.player?.seek(to: kCMTimeZero)
+            self.player?.seek(to: CMTime.zero)
             self.play()
         }
     }
@@ -82,7 +82,7 @@ public extension FNVideoView {
 
 private extension FNVideoView {
     
-    func setFillMode(mode: String ) {
+    func setFillMode(mode: AVLayerVideoGravity) {
         guard let layer = self.layer as? AVPlayerLayer else {return}
         layer.videoGravity = mode
     }
