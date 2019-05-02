@@ -27,7 +27,7 @@ open class FNVideoView: UIView {
     /**
      - parameter frame:
      - parameter videoURL:
-     - parameter fillMode:AVLayerVideoGravityResizeAspect, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResize
+     - parameter fillMode:AVLayerVideoGravity.resizeAspect, AVLayerVideoGravity.resizeAspectFill, AVLayerVideoGravity.resize
      */
     public init(frame: CGRect, videoURL: URL, fillMode: AVLayerVideoGravity = AVLayerVideoGravity.resizeAspectFill) {
         super.init(frame: frame)
@@ -53,7 +53,7 @@ public extension FNVideoView {
     
     /**
      - parameter videoURL:
-     - parameter fillMode:AVLayerVideoGravityResizeAspect, AVLayerVideoGravityResizeAspectFill, AVLayerVideoGravityResize
+     - parameter fillMode: AVLayerVideoGravity.resizeAspect, AVLayerVideoGravity.resizeAspectFill, AVLayerVideoGravity.resize
      */
     func setPlayer(videoURL: URL, fillMode: AVLayerVideoGravity = AVLayerVideoGravity.resizeAspectFill) {
         self.player = AVPlayer(url: videoURL)

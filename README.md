@@ -45,8 +45,8 @@ import FNVideoView
    ```
   
 ## Runtime Requirements
-iOS8.0 or later
-Xcode 8.2 - Swift3
+iOS9.0 or later
+Xcode 10.2 - Swift5
 ## Installation and Setup
 ### Installing with Carthage
 
@@ -61,8 +61,6 @@ github "funzin/FNVideoView"
 
 To integrate FNVideoView into your Xcode project using CocoaPods, specify it in your `Podfile` and run `pod install`.
 ```bash
-platform :ios, '8.0'
-use_frameworks!
 pod "FNVideoView"
 ```
 
