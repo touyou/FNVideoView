@@ -61,7 +61,7 @@ github "funzin/FNVideoView"
 
 To integrate FNVideoView into your Xcode project using CocoaPods, specify it in your `Podfile` and run `pod install`.
 ```bash
-pod "FNVideoView"
+pod "FNVideoView", :git => 'https://github.com/touyou/FNVideoView.git'
 ```
 
 ## Contribution
